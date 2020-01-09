@@ -1,0 +1,4 @@
+elasticsearch: #ElasticsearchProperties
+  cluster-name: idss-es #Guosen #默认即为elasticsearch
+  cluster-nodes: 192.168.0.83:29300 #配置es节点信息，逗号分隔，如果没有指定，则启动ClientNode
+  cluster-hosts: 192.168.0.83:29200
