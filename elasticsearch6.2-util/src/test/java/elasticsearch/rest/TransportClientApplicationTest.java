@@ -1,11 +1,11 @@
-package pers.wilson.elasticsearch;
+package elasticsearch.rest;
 
 import lombok.extern.slf4j.Slf4j;
 
 import static pers.wilson.elasticsearch.transport.TransportClientUtil.*;
 
 @Slf4j
-public class Application {
+public class TransportClientApplicationTest {
 
     public static void main(String[] args) {
 
