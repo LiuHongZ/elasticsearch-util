@@ -31,13 +31,6 @@
             <artifactId>logback-core</artifactId>
             <version>1.2.3</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
-            <version>1.17</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -85,6 +78,19 @@
                             </goals>
                         </execution>
                     </executions>
+                </plugin>
+
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.1.1</version>
+                    <configuration>
+                        <excludes>
+                            <exclude>mapper/</exclude>
+                            <exclude>*.properties</exclude>
+                            <exclude>*.yml</exclude>
+                            <exclude>*.xml</exclude>
+                        </excludes>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
